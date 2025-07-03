@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation consolas</title>
+    <link rel="icon" href="../imagenes/playstation2.png">
+    <link rel="stylesheet" href="../Style_proyecto/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        .p {
+        color: blueviolet;
+        }
+        .contenido {
+        color: blueviolet;
+        }
+        #titulo {
+        color: blueviolet;
+        }
+        .game-card {
+        border: 5px solid gray;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background-color: #0f172a;
+        width: 300px;
+        }
+        .game-card img {
+        width: 50%;
+        height: auto;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1 id="titulo">Consolas PlayStation</h1>
+  </header>
+
+  <main class="contenido">
+<div class="cards-container">
+    <div class="game-card">
+      <h2>PlayStation 5</h2>
+      <img src="../imagenes/ps5.webp" alt="Imagen de la PlayStation 5">
+      <p class="p">Precio: Q3,826.39</p>
+      <a href="../Paginas/Comprar.html" target="_blank">Comprar</a>
+    </div>
+
+    <div class="game-card">
+      <h2>PlayStation 4</h2>
+      <img src="../imagenes/ps4.webp" alt="Imagen de la PlayStation 4">
+      <p class="p">Precio: Q2,292.77</p>
+      <a href="../Paginas/Comprar.html" target="_blank">Comprar</a>
+    </div>
+
+    <div class="game-card">
+      <h2>PlayStation 3</h2>
+      <img src="../imagenes/ps3.jpeg" alt="Imagen de la PlayStation 3">
+      <p class="p">Precio: Q1,525.21</p>
+      <a href="../Paginas/Comprar.html" target="_blank">Comprar</a>
+    </div>
+  </main>
+</div>
+  <footer>
+    <p class="p"><strong>Diego Mauricio</strong> - Precios y consolas.</p>
+  </footer>
+</body>
+</html>
