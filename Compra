@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comprar</title>
+  <link rel="icon" href="../imagenes/Icono proyecto.jpg" />
+  <link rel="stylesheet" href="../Style_proyecto/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    #titulo {
+      color: blueviolet;
+    }
+
+    .contenido {
+      color: blueviolet;
+    }
+
+    .compras {
+      display: flex;
+      gap: 20px;
+    }
+
+    .comprar-lista {
+      flex: 1;
+    }
+
+    .detalle-compra {
+      flex: 1;
+      border: 2px solid blueviolet;
+      padding: 15px;
+      display: none; /* Oculto inicialmente */
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    .btn-agregar {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: blueviolet;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .mensaje {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    a {
+      color: darkblue;
+      cursor: pointer;
+      display: block;
+      margin: 8px 0;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo">Página de Compra</h1>
+  <div class="compras">
+    <!-- Lista de productos -->
+    <div class="comprar-lista">
+      <p class="contenido">Selecciona una consola para comprar:</p>
+      <a onclick="mostrarDetalle('PlayStation 5')">Comprar PlayStation 5</a>
+      <a onclick="mostrarDetalle('PlayStation 4')">Comprar PlayStation 4</a>
+      <a onclick="mostrarDetalle('PlayStation 3')">Comprar PlayStation 3</a>
+    </div>
+
+    <!-- Detalles del producto -->
+    <div class="detalle-compra" id="detalleCompra">
+      <h3 id="productoTitulo">Consola seleccionada</h3>
+      <button class="btn-agregar" onclick="agregarAlCarrito()">Agregar al carrito</button>
+      <p class="mensaje" id="mensajeGracias"></p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarDetalle(producto) {
+      document.getElementById('productoTitulo').textContent = producto;
+      document.getElementById('detalleCompra').style.display = 'block';
+      document.getElementById('mensajeGracias').textContent = '';
+    }
+
+    function agregarAlCarrito() {
+      document.getElementById('mensajeGracias').textContent = '¡Gracias por comprar!';
+    }
+  </script>
+</body>
+</html>
